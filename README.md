@@ -11,10 +11,10 @@
 
 # Adding new model
 Each time you want to define a new model, you should
+
 1. Define its schema
 	Here schema means the columns, indexes and relationship between other
-	schema, not the meaning of schema in Postgres world. see
-	`schema/account-v1.coffee`
+	schema, not the meaning of schema in Postgres world. see `schema/account-v1.coffee`
 
 	Your schema file should include be postfixed with a revision number.
 	When you schema is changed, write a new schema file, and keep the old one
@@ -33,8 +33,11 @@ Each time you want to define a new model, you should
 	This simple test may help you debug your migration task.
 
 # Updating a new model
-1. Define a new schema
-	Your should create a new schema file, e.g. `schema/account-v2.coffee`,
+When you want to update a model, you should
+
+1. Define a new schema and keep the old version
+
+	Your should create a new schema file, e.g. `schema/account-v2`,
 	changing the require pathname from `schema/account-v1.coffee` to
 	`schema/account-v2` **except for files related to migration**.
 
