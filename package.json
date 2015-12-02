@@ -1,0 +1,33 @@
+{
+  "name": "database-dev-sample",
+  "version": "1.0.0",
+  "description": "Sample project for database development",
+  "main": "index.js",
+  "engine": {
+    "node": ">=4.0"
+  },
+  "private": true,
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register test.coffee"
+  },
+  "keywords": [
+    "Account",
+    "Database",
+    "Model",
+    "Migration"
+  ],
+  "author": "<lanxingcan@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "co": "^4.6.0",
+    "coffee-script": "^1.10.0",
+    "pg": "^4.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.14.2",
+    "umzug": "^1.7.0"
+  },
+  "devDependencies": {
+    "co-mocha": "^1.1.2",
+    "mocha": "^2.3.4"
+  }
+}
