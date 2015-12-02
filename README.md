@@ -32,10 +32,10 @@ Each time you want to define a new model, you should
 	Write a simple unit test for this model no matter how simple it is.
 	This simple test may help you debug your migration task.
 
-# Updating a new model
-When you want to update a model, you should
+# Updating an existing model
+When you want to update an existing model, you should
 
-1. Define a new schema and keep the old version
+1. Define the new version schema and keep the old version
 
 	Your should create a new schema file, e.g. `schema/account-v2`,
 	changing the require pathname from `schema/account-v1.coffee` to
