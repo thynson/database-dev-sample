@@ -58,8 +58,4 @@ class AccountSchema extends Schema
 		model = sequelize.define @name, COLUMNS
 
 
-	destroy: (sequelize)->
-		yield sequelize.getQueryInterface().dropTable @name
-
-
 module.exports = new AccountSchema

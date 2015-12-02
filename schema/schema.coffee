@@ -15,7 +15,7 @@ module.exports = class Schema
 		yield @define(sequelize).sync()
 
 	destroy: (sequelize)->
-		sequelize.getQueryInterface.dropTable @name
+		yield sequelize.getQueryInterface().dropTable @name
 
 	migrate: (sequelize)->
 
