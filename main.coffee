@@ -1,6 +1,5 @@
 
 co = require 'co'
 
-
-module.exports = co.wrap (cfg)->
+module.exports = co.wrap require './schema'
 
